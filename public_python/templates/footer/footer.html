@@ -1,0 +1,17 @@
+{% load static %}
+<footer id="footer__container">
+    <div class="footer__left">
+        <img src="{% static 'images/LogoC1.svg' %}" class="footer__logo"/>
+        <p class="footer__policy"><a href="{% url "root:privacy_policy" %}">Polityka Prywatności</a></p>
+        <p  class="footer__copy">&copy; 2020 Strefa Dance Studio. All rights reserved.</p>
+    </div>
+    <div class="footer__right">
+        <ul class="footer__list">
+            <li ><a id="/" href="{% url "root:home" %}">Strona Główna</a></li>
+            <li ><a id="/o-nas/" href="{% url "team:team" %}">O nas</a></li>
+            <li ><a id="/grafik/" href="{% url "graphic:graphic" %}">Grafik</a></li>
+            <li ><a id="/cennik/" href="{% url "root:pricing" %}">Cennik</a></li>
+            <li ><a id="/kontakt/" href="{% url "root:contact" %}">Kontakt</a></li>
+        </ul>
+    </div>
+</footer>

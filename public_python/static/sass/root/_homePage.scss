@@ -1,0 +1,268 @@
+.home__news__bar {
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+
+.home__news__bar__text {
+  width: 100%;
+  background-color: $mottoBlue;
+  padding: 2px 0 2px 20px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.home__news__bar__square {
+  position: relative;
+  top: -9px;
+  left: 20px;
+  z-index: -1;
+  width: 17px;
+  height: 17px;
+  background-color: $mottoBlue;
+  transform: rotate(45deg);
+}
+
+.home__wrapper__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.home__button__show__much {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50px;
+
+  &:hover {
+    font-weight: 700;
+  }
+
+  &:active {
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // Not changes
+  .home__news__bar {
+    width: 100%;
+    margin: 0 auto 15px auto;
+  }
+  // Add font size
+  .home__news__bar__text {
+    width: 100%;
+    background-color: $mottoBlue;
+    padding: 2px 0 2px 20px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 19px;
+  }
+  // Change top and left
+  .home__news__bar__square {
+    position: relative;
+    top: -8px;
+    left: 18px;
+    z-index: -1;
+    width: 17px;
+    height: 17px;
+    background-color: $mottoBlue;
+    transform: rotate(45deg);
+  }
+  // Not changes
+  .home__wrapper__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+  }
+  // Not changes
+  .home__button__show__much {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50px;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &:active {
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  // Not changes
+  .home__news__bar {
+    width: 100%;
+    margin: 0 auto 15px auto;
+  }
+  // Change padding and font-size
+  .home__news__bar__text {
+    width: 100%;
+    background-color: $mottoBlue;
+    padding: 3px 0 3px 20px;
+    font-size: 21px;
+    color: #fff;
+    border-radius: 3px;
+  }
+  // Change size and position
+  .home__news__bar__square {
+    position: relative;
+    top: -9px;
+    left: 20px;
+    width: 19px;
+    height: 19px;
+    background-color: $mottoBlue;
+    transform: rotate(45deg);
+  }
+  // Not changes
+  .home__wrapper__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+  }
+  // Not changes
+  .home__button__show__much {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50px;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &:active {
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  // Change width
+  .home__news__bar {
+    width: 100%;
+    margin: 0 auto 15px auto;
+  }
+  // Not changes
+  .home__news__bar__text {
+    width: 100%;
+    background-color: $mottoBlue;
+    padding: 3px 0 3px 20px;
+    font-size: 21px;
+    color: #fff;
+    border-radius: 3px;
+  }
+  // Not changes
+  .home__news__bar__square {
+    position: relative;
+    top: -9px;
+    left: 20px;
+    width: 19px;
+    height: 19px;
+    background-color: $mottoBlue;
+    transform: rotate(45deg);
+  }
+  // Not changes
+  .home__wrapper__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+  }
+  // Not changes
+  .home__button__show__much {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50px;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &:active {
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  // Change font-size
+  .home__news__bar {
+    width: 100%;
+    margin: 0 auto 15px auto;
+    font-size: 23px;
+  }
+  // Change font-size
+  .home__news__bar__text {
+    width: 100%;
+    background-color: $mottoBlue;
+    padding: 3px 0 3px 20px;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 3px;
+  }
+  // Change size and position
+  .home__news__bar__square {
+    position: relative;
+    top: -10px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: $mottoBlue;
+    transform: rotate(45deg);
+  }
+  // Not changes
+  .home__wrapper__button {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+  }
+  // Not changes
+  .home__button__show__much {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50px;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &:active {
+      font-weight: 700;
+    }
+  }
+}

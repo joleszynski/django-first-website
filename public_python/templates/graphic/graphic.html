@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="graphic__wrapper">
+    <table class="graphic__table">
+        <tr class="graphic__tr__head">
+            <th>Poniedziałek</th>
+        </tr>
+        {% for day in days %}
+            {% for d in day  %}
+                {% if d.day|stringformat:"s" == "Poniedziałek" %}
+                <tr class="graphic__tr__body">
+                    <td style="background-color: {{d.group.color}}">
+                        <ul class="table__tr__list">
+                            <li><b>{{d.start_hour|date:"H:i"}}-{{d.end_hour|date:"H:i"}}</b></li>
+                            <li>{{d.group.name}}</li>
+                            <li>{{d.place}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </table>
+    <table class="graphic__table">
+        <tr class="graphic__tr__head">
+            <th>Wtorek</th>
+        </tr>
+        {% for day in days %}
+            {% for d in day  %}
+                {% if d.day|stringformat:"s" == "Wtorek" %}
+                <tr class="graphic__tr__body">
+                    <td style="background-color: {{d.group.color}}">
+                        <ul class="table__tr__list">
+                            <li><b>{{d.start_hour|date:"H:i"}}-{{d.end_hour|date:"H:i"}}</b></li>
+                            <li>{{d.group.name}}</li>
+                            <li>{{d.place}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </table>
+    <table class="graphic__table">
+        <tr class="graphic__tr__head">
+            <th>Środa</th>
+        </tr>
+        {% for day in days %}
+            {% for d in day  %}
+                {% if d.day|stringformat:"s" == "Środa" %}
+                <tr class="graphic__tr__body">
+                    <td style="background-color: {{d.group.color}}">
+                        <ul class="table__tr__list">
+                            <li><b>{{d.start_hour|date:"H:i"}}-{{d.end_hour|date:"H:i"}}</b></li>
+                            <li>{{d.group.name}}</li>
+                            <li>{{d.place}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </table>
+    <table class="graphic__table">
+        <tr class="graphic__tr__head">
+            <th>Czwartek</th>
+        </tr>
+        {% for day in days %}
+            {% for d in day  %}
+                {% if d.day|stringformat:"s" == "Czwartek" %}
+                <tr class="graphic__tr__body">
+                    <td style="background-color: {{d.group.color}}">
+                        <ul class="table__tr__list">
+                            <li><b>{{d.start_hour|date:"H:i"}}-{{d.end_hour|date:"H:i"}}</b></li>
+                            <li>{{d.group.name}}</li>
+                            <li>{{d.place}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </table>
+    <table class="graphic__table">
+        <tr class="graphic__tr__head">
+            <th>Piątek</th>
+        </tr>
+        {% for day in days %}
+            {% for d in day  %}
+                {% if d.day|stringformat:"s" == "Piątek" %}
+                <tr class="graphic__tr__body">
+                    <td style="background-color: {{d.group.color}}">
+                        <ul class="table__tr__list">
+                            <li><b>{{d.start_hour|date:"H:i"}}-{{d.end_hour|date:"H:i"}}</b></li>
+                            <li>{{d.group.name}}</li>
+                            <li>{{d.place}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </table>
+</div>
+
+<section class="graphic__legend__container">
+    {% for group in groups %}
+            <div class="graphic__legend__index">
+                <div class="graphic__legend__index__color" style="background-color: {{group.color}}" ></div>
+                <div class="graphic__legend__index__text">{{group.name}}</div>
+            </div>
+    {% endfor %}
+</section>
+
+{% endblock content %}

@@ -1,0 +1,22 @@
+/* COLOR */
+$mottoBlue: #2c61c7;
+$pricingTable: rgba(44, 97, 199, 0.11);
+
+/* MIXIN */
+@mixin underlineBlue {
+  width: 40px;
+  height: 1px;
+  background-color: $mottoBlue;
+  margin: 5px auto 0 auto;
+}
+
+@mixin noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}

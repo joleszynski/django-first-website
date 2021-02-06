@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="group__image__wrapper">
+            <img src="{{describe.photo.url}}" class="group__image"/>
+    </div>
+    <div class="component__describe describe__group">
+        {{describe.describe}}
+    </div>
+
+    <div class="group__section__title">
+        Grupy
+        <div class="underline__blue"></div>
+    </div>
+
+
+    {% for group in groups %}
+    <section>
+        <div class="group__index__wrapper">
+            <div class="group__index__img__container">
+                <div class="group__index__img__wrapper">
+                    <img src="{{group.photo.url}}" alt="" class="group__index__img" />
+                </div>
+            </div>
+            <div class="group__index__content__container">
+                <div class="group__index__content__header">
+                    <h3>{{ group.name }}</h3>
+                    <p>{{ group.dance_type }}</p>
+                </div>
+                <div class="group__index__content">
+                    {{ group.describe }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+
+    <div class="underline__blue__special"></div>
+
+    <div class="group__section__title">
+        Instruktorzy
+        <div class="underline__blue"></div>
+    </div>
+
+    {% for trainer in trainers %}
+    <section>
+        <div class="group__index__wrapper">
+            <div class="group__index__img__container">
+                <div class="group__index__img__wrapper">
+                    <img src="{{ trainer.photo.url }}" alt="" class="group__index__img"/>
+                </div>
+            </div>
+            <div class="group__index__content__container">
+                <div class="group__index__content__header">
+                    <h3>{{ trainer.name }}</h3>
+                    <p>{{ trainer.dance_type }}</p></div>
+                <div class="group__index__content">
+                    {{trainer.describe}}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+{% endblock content %}

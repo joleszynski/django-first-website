@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="post__page__wrapper">
+        <div class="post__page__header">
+            <h1 class="post__page__name">{{ post.title }}</h1>
+            <p class="post__page__date">{{ post.pub_date }}</p>
+        </div>
+
+        <div class="post__page__img__wrapper">
+            <img src="{{ post.photo.url }}" class="post__page__image"/>
+        </div>
+
+        <div class="post__page__content">
+            {{ post.content }}
+        </div>
+
+        <a href="/" class="post__page__return__button">
+            <div>
+                Return to blog
+            </div>
+        </a>
+    </div>
+{% endblock %}

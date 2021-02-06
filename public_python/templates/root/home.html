@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block in_body%}
+    onload="takeData({% url 'core:posts_onload' %})"
+{%endblock%}
+
+{% block content %}
+    <section>
+        <h1 class="component__title">{{ body_head.name }}</h1>
+        <div class="component__describe">
+            {{ body_head.describe }}
+        </div>
+        <div class="home__news__bar">
+            <div class="home__news__bar__text">Aktualności</div>
+            <div class="home__news__bar__square"></div>
+        </div>
+    </section>
+
+        <div class="home__wrapper__button">
+            {% csrf_token %}
+            <button onClick="postData({% url 'core:posts_reload' %})" class="home__button__show__much">
+                Pokaż więcej
+            </button>
+        </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script type="text/javascript" src="{% static 'js/takePosts.js' %}"></script>
+{% endblock %}
+
+
+<!--
+            {% for post in blog_index %}
+                <div class="content__post">
+                    <div class="img__wrapper">
+                        <img src="{{ post.photo.url }}" class="post__image" />
+                    </div>   
+                    <div class="post__rside">
+                        <h3 class="post__title">
+                            <a href="{% url 'blog:detail' post.slug %}">
+                                {{post.title}}
+                            </a>
+                        </h3>
+                        <div class="post__intro">
+                            {{ post.content|slice:255 }}
+                            <a href="{% url 'blog:detail' post.slug %}">Czytaj dalej</a>
+                        </div>
+                    </div>  
+                </div>    
+            {% endfor %}
+-->

@@ -1,0 +1,110 @@
+.banner__wrapper {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+
+  .banner {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .name__wrapper {
+      margin: 10px 0 0 0;
+      .name {
+        display: flex;
+        white-space: nowrap;
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+      .motto {
+        width: 107%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        p {
+          color: $mottoBlue;
+          font-family: "Marck Script", cursive;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner__wrapper {
+    height: 70px;
+    .banner {
+      margin: 5px 0;
+      .logo {
+        img {
+          width: 55px;
+          height: 55px;
+        }
+      }
+      .name__wrapper {
+        flex: 1;
+        margin: 7px 0 0 30px;
+        .name {
+          font-size: 20px;
+          letter-spacing: 2px;
+        }
+        .motto {
+          width: 60%;
+          justify-content: center;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner__wrapper {
+    height: initial;
+    .banner {
+      width: 65%;
+      max-width: 1024px;
+      justify-content: space-evenly;
+      .logo {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .name__wrapper {
+        flex: none;
+        margin: 7px 60px 0 0;
+        .name {
+          font-size: 45px;
+          margin-right: 20px;
+          letter-spacing: 3px;
+        }
+        .motto {
+          width: 110%;
+          justify-content: flex-end;
+          p {
+            font-size: 22px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}

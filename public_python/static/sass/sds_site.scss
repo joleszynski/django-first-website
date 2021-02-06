@@ -1,0 +1,29 @@
+@import "./base";
+@import "./variables";
+
+
+@import "./components/components";
+
+
+@import "./header/header";
+@import "./header/banner";
+@import "./header/menu";
+@import "./header/burger";
+
+
+@import "./blog/indexPost";
+@import "./blog/postPage";
+
+@import "./root/homePage";
+@import "./root/contactPage";
+@import "./root/pricingPage";
+@import "./root/privacyPolicy";
+
+
+@import "./team/teamPage";
+
+
+@import "./graphic/graphicPage";
+
+
+@import "./footer/footer";

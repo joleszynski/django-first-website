@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {% for contact in contact  %}
+        <div class="contact__wrapper">
+            <div class="contact__title">Kontakt</div>
+            <ul class="contact__list">
+                <li><img src="{% static "images/telephone.svg" %}"><a href="tel:{{contact.phone_number}}" target="_blank">{{ contact.phone_number }}</a></li>
+                <li><img src="{% static "images/atsymbol.svg" %}"><a href="mailto:{{contact.email}}" target="_blank">{{ contact.email }}</a></li>
+                <li><img src="{% static "images/instagram.svg" %}"><a href="{{ contact.instagram_link }}" target="_blank">{{ contact.instagram }}</a></li>
+                <li><img src="{% static "images/facebook.svg" %}"><a href="{{ contact.facebook_link }}" target="_blank">{{ contact.facebook }}</a></li>
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock content %}

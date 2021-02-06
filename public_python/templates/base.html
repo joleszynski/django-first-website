@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            {% block title %}
+            {% endblock %}
+        </title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {# Global Fonts #}
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Muli:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        {# Global stylesheets #}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/sds_site.min.css' %}">
+
+        {% block extra_css %}
+        {% endblock %}
+    </head>
+
+    <body class="{% block body_class %}{% endblock %}" {%block in_body%}{%endblock%}>
+        {% include 'header/header.html' %}
+        
+        <main class="content__box">
+            {% block content %}{% endblock %}
+            
+        </main>
+        {% include 'footer/footer.html' %}
+        
+        {# Global javascript #}
+        <script type="text/javascript" src="{% static 'js/sds_site.js' %}"></script>
+
+        {% block extra_js %}
+            {# Override this in templates to add extra javascript #}
+        {% endblock %}
+    </body>
+</html>

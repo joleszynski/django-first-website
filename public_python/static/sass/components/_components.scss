@@ -1,0 +1,91 @@
+.component__title {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.component__describe {
+  font-size: 15px;
+  margin: 20px 0 30px 0;
+}
+
+.describe__group {
+  border-top: 1px solid $mottoBlue;
+  border-bottom: 1px solid $mottoBlue;
+  padding: 10px;
+  text-align: justify;
+}
+
+// Image on about-us
+.group__image__wrapper {
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group__image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+}
+// end image
+
+@media screen and (min-width: 768px) {
+  .component__title {
+    margin-top: 20px;
+    font-size: 23px;
+  }
+
+  .component__describe {
+    font-size: 17px;
+    margin: 20px 0 30px 0;
+  }
+
+  // Image on about-us
+  .group__image__wrapper {
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .group__image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+  }
+  // end image
+}
+
+@media screen and (min-width: 1280px) {
+  .component__title {
+    margin-top: 20px;
+    font-size: 23px;
+  }
+
+  .component__describe {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+
+  // Image on about-us
+  .group__image__wrapper {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .group__image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+  }
+  // end image
+}

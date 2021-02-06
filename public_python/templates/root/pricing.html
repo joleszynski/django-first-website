@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="pricing__wrapper">
+  <div class="pricing__describe"><p>{{ plan.describe|safe }}</p></div>
+
+  <table class="pricing__table">
+        <tr class="pricing__table__title">
+          <th class="table__head_1">Kategoria</th>
+          <th class="table__head_2">Cena</th>
+        </tr>
+      {% for active in activity %}
+        <tr class="pricing__table__row">
+            <td class="table__row_1">{{ active.activity_name }}</td>
+            <td class="table__row_2">{{ active.price }}</td>
+        </tr>
+      {% endfor %}
+        <tr class="pricing__last__tr">
+            <td></td>
+            <td></td>
+        </tr>
+  </table>
+
+  <div class="pricing__links">
+    <div class="pricing__regulamin"><a href="{% url "root:pdf" file_rule %}" target="_blank">Regulamin</a></div>
+    <div class="pricing__regulamin"><a href="{% url "root:pdf" file_agreement %}" target="_blank">Pobierz umowę</a></div>
+</div>
+
+{% endblock content %}

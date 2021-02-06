@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="privacy__policy__content">
+        <h3>{{document.name}}</h3>
+        {{document.text}}
+    </div>
+{% endblock content %}

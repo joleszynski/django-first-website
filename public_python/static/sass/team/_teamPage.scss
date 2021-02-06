@@ -1,0 +1,253 @@
+.group__section__title {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.underline__blue {
+  @include underlineBlue();
+}
+
+.underline__blue__special {
+  @include underlineBlue();
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.group__index__wrapper {
+  width: 90%;
+  margin: 40px auto 90px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// LEFT SIDE INDEX
+.group__index__img__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group__index__img__wrapper {
+  width: 180px;
+  height: 180px;
+  background-color: lightslategray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.group__index__img {
+  width: 100%;
+  height: auto;
+}
+
+//RIGHT SITE INDEX
+.group__index__content__container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.group__index__content__header {
+  text-align: center;
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    margin-top: 5px;
+    font-size: 13px;
+    color: $mottoBlue;
+    font-weight: 700;
+  }
+}
+
+.group__index__content {
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 15px;
+  width: 100%;
+  height: 140px;
+}
+
+@media screen and (min-width: 768px) {
+  // CHANGE MARGIN-TOP AND FONT-SIZE
+  .group__section__title {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  // Change margin-top, height, flex-direction
+  .group__index__wrapper {
+    width: 100%;
+    height: 180px;
+    margin: 60px auto 90px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // LEFT SIDE INDEX
+
+  // Change add margin-right
+  .group__index__img__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+  }
+
+  // Not change
+  .group__index__img__wrapper {
+    width: 180px;
+    height: 180px;
+    background-color: lightslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  // Not change
+  .group__index__img {
+    width: 100%;
+    height: auto;
+  }
+
+  //RIGHT SITE INDEX
+
+  // Change margin, height, widt, add padding
+  .group__index__content__container {
+    margin: 0;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px 15px 15px;
+  }
+
+  // Not change
+  .group__index__content__header {
+    text-align: center;
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 5px;
+      font-size: 13px;
+    }
+  }
+
+  // Not change
+  .group__index__content {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 15px;
+    width: 100%;
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  // Not  change
+  .group__section__title {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  // Change height, margin-top
+  .group__index__wrapper {
+    width: 100%;
+    height: 220px;
+    margin: 45px auto 90px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // LEFT SIDE INDEX
+
+  // Not change
+  .group__index__img__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+  }
+
+  // Change width and height
+  .group__index__img__wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: lightslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  // Not change
+  .group__index__img {
+    width: 100%;
+    height: auto;
+  }
+
+  //RIGHT SITE INDEX
+
+  // Change padding
+  .group__index__content__container {
+    margin: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 55px 0 55px;
+  }
+
+  // Change font-size
+  .group__index__content__header {
+    text-align: center;
+    margin-top: 15px;
+    h3 {
+      font-size: 23px;
+    }
+
+    p {
+      margin-top: 5px;
+      font-size: 20px;
+    }
+  }
+
+  // Change font-size
+  .group__index__content {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 18px;
+    width: 100%;
+    height: 140px;
+  }
+}

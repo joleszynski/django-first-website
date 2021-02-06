@@ -1,0 +1,16 @@
+{% load static %}
+<div class="logo">
+  <a href="{% url "core:home" %}"><img src="{% static 'images/LogoC1.svg' %}" /></a>
+</div>
+
+
+<div class="name__wrapper">
+    <div class="name">
+      <a href="{% url "core:home" %}">
+        Strefa Dance Studio
+      </a>
+    </div>
+  <div class="motto"><p>No stress, only dance</p></div>
+</div>
+
+{% include "header/burger.html" %}
